@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>She's Dating the Gangster - Kwento</title>
+    <meta name="description" content="A heartwarming tale of young love that transcends time. Support this authentic Filipino romance drama based on the bestselling novel.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="film-detail.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">Kwento</a>
+                
+                <div class="nav-links-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html#films" class="nav-link">Films</a>
+                    <a href="index.html#about" class="nav-link">About</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="menu-icon">☰</span>
+                    <span class="close-icon" style="display: none;">✕</span>
+                </button>
+            </div>
+
+            <div class="nav-links-mobile" id="mobileMenu">
+                <a href="index.html" class="nav-link-mobile">Home</a>
+                <a href="index.html#films" class="nav-link-mobile">Films</a>
+                <a href="index.html#about" class="nav-link-mobile">About</a>
+                <a href="index.html#contact" class="nav-link-mobile">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Film Hero Section -->
+    <section class="film-hero">
+        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080" 
+             alt="She's Dating the Gangster" class="hero-image" id="heroImage">
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <div class="container">
+                <a href="index.html" class="back-link">
+                    <span class="back-arrow">←</span>
+                    Back to Home
+                </a>
+                
+                <h1 class="film-hero-title">She's Dating the Gangster</h1>
+                <div class="film-meta-info">
+                    <span class="meta-item">
+                        <span class="meta-icon">📅</span>
+                        2014
+                    </span>
+                    <span class="meta-separator">•</span>
+                    <span>Romance/Drama</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="film-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Synopsis -->
+                    <section class="content-section">
+                        <h2 class="section-heading">Synopsis</h2>
+                        <p class="synopsis-text">
+                            Based on the popular Wattpad novel by Bianca Bernardino, this film explores themes of young love, sacrifice, and the bittersweet nature of relationships that define our youth.
+                        </p>
+                        <p class="synopsis-text">
+                            She's Dating the Gangster tells the story of 17-year-old Athena Dizon who unwittingly plays a trick on resident heartthrob and bad boy, gangster, Kenji de los Reyes. All of a sudden, she finds herself pretending to be his girlfriend to make an ex jealous; and he, pretending to be her boyfriend to make her ex-boyfriend jealous. The simple game turns into something more when Athena and Kenji find themselves falling in love with each other. But their love story is far from perfect, as they deal with the harsh realities of life and the consequences of their choices.
+                        </p>
+                    </section>
+
+                    <!-- Cast & Crew -->
+                    <section class="content-section">
+                        <h2 class="section-heading">Cast & Crew</h2>
+                        <div class="cast-crew-grid">
+                            <div class="crew-item">
+                                <h3 class="crew-role">
+                                    <span class="crew-icon">🎬</span>
+                                    Director
+                                </h3>
+                                <p class="crew-name">Cathy Garcia-Sampana</p>
+                            </div>
+                            
+                            <div class="crew-item">
+                                <h3 class="crew-role">
+                                    <span class="crew-icon">✍️</span>
+                                    Writer
+                                </h3>
+                                <p class="crew-name">Carmi Raymundo</p>
+                            </div>
+                            
+                            <div class="cast-section">
+                                <h3 class="crew-role">
+                                    <span class="crew-icon">👤</span>
+                                    Main Cast
+                                </h3>
+                                <div class="cast-list">
+                                    <span class="cast-name">Kathryn Bernardo</span>
+                                    <span class="cast-name">Daniel Padilla</span>
+                                    <span class="cast-name">Richard Gomez</span>
+                                    <span class="cast-name">Dawn Zulueta</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Gallery -->
+                    <section class="content-section">
+                        <h2 class="section-heading">Gallery</h2>
+                        <div class="gallery-grid">
+                            <button class="gallery-item active" onclick="changeHeroImage(0)">
+                                <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                                     alt="She's Dating the Gangster scene 1" class="gallery-image">
+                            </button>
+                            <button class="gallery-item" onclick="changeHeroImage(1)">
+                                <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                                     alt="She's Dating the Gangster scene 2" class="gallery-image">
+                            </button>
+                            <button class="gallery-item" onclick="changeHeroImage(2)">
+                                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                                     alt="She's Dating the Gangster scene 3" class="gallery-image">
+                            </button>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Funding Progress -->
+                    <div class="sidebar-card">
+                        <h3 class="card-title">Funding Progress</h3>
+                        
+                        <div class="funding-progress">
+                            <div class="progress-header">
+                                <span class="progress-label">Progress</span>
+                                <span class="progress-percentage">78%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 78%"></div>
+                            </div>
+                        </div>
+
+                        <div class="funding-stats">
+                            <div class="funding-stat">
+                                <div class="stat-row">
+                                    <span class="stat-icon">🎯</span>
+                                    <span class="stat-label">Raised</span>
+                                </div>
+                                <span class="stat-value">₱2,340,000</span>
+                            </div>
+                            
+                            <div class="funding-stat">
+                                <span class="stat-label">Goal</span>
+                                <span class="stat-value">₱3,000,000</span>
+                            </div>
+                            
+                            <div class="funding-stat">
+                                <div class="stat-row">
+                                    <span class="stat-icon">👥</span>
+                                    <span class="stat-label">Backers</span>
+                                </div>
+                                <span class="stat-value">1,247</span>
+                            </div>
+                        </div>
+
+                        <button class="support-btn">Support This Film</button>
+                    </div>
+
+                    <!-- Film Details -->
+                    <div class="sidebar-card">
+                        <h3 class="card-title">Film Details</h3>
+                        
+                        <div class="detail-item">
+                            <span class="detail-label">Release Year:</span>
+                            <p class="detail-value">2014</p>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <span class="detail-label">Genre:</span>
+                            <p class="detail-value">Romance/Drama</p>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <span class="detail-label">Director:</span>
+                            <p class="detail-value">Cathy Garcia-Sampana</p>
+                        </div>
+                    </div>
+
+                    <!-- Share -->
+                    <div class="sidebar-card">
+                        <h3 class="card-title">Share This Film</h3>
+                        <p class="share-text">Help spread the word about this amazing Filipino film project.</p>
+                        <button class="share-btn">Share Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">About Kwento</h3>
+                    <p class="footer-text">Dedicated to supporting Filipino cinema through crowdfunding and community engagement.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">For Filmmakers</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Submit Your Project</a>
+                        <a href="#" class="footer-link">Filmmaker Resources</a>
+                        <a href="#" class="footer-link">Success Stories</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">For Supporters</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Browse All Films</a>
+                        <a href="#" class="footer-link">How It Works</a>
+                        <a href="#" class="footer-link">Community Guidelines</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <span class="contact-icon">✉</span>
+                            <span class="contact-text">support@kwento.ph</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span class="contact-text">+63 2 8123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span class="contact-text">Manila, Philippines</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Kwento. All rights reserved. Supporting Filipino cinema, one story at a time.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="film-detail.js"></script>
+</body>
+</html>

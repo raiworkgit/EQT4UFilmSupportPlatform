@@ -2,106 +2,95 @@
 
 ## Overview
 
-Kwento is a full-stack web application designed to support Filipino filmmakers through crowdfunding. The platform allows users to discover and fund authentic Filipino film projects, connecting passionate filmmakers with supportive audiences. The application features a modern, responsive design with a focus on showcasing film projects and facilitating community engagement.
+Kwento is a static HTML/CSS website designed to support Filipino filmmakers through crowdfunding. The platform showcases authentic Filipino film projects, connecting passionate filmmakers with supportive audiences. The website features a modern, responsive design with individual project pages for three authentic Filipino films: "She's Dating the Gangster" (2014), "Seven Sundays" (2017), and "100 Tula Para Kay Stella" (2017).
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Project approach: Static HTML/CSS prototype (can be upgraded to React/JavaScript in the future).
 
 ## System Architecture
 
-This is a full-stack TypeScript application built with a modern web stack:
+**Current Architecture (Static Website):**
+- **Frontend**: Pure HTML5, CSS3, and vanilla JavaScript
+- **Styling**: Custom CSS with modern design patterns, Google Fonts integration  
+- **Structure**: Static HTML files with shared CSS and JavaScript
+- **Server**: Express.js serving static files (development environment)
+- **Images**: External sources (Unsplash) for film posters and backgrounds
 
-**Frontend**: React with TypeScript, using Vite as the build tool and development server
-**Backend**: Express.js with TypeScript running on Node.js
-**Styling**: Tailwind CSS with shadcn/ui components for consistent, accessible UI elements
-**Database**: PostgreSQL with Drizzle ORM for type-safe database operations
-**Database Provider**: Neon Database (serverless PostgreSQL)
-**Routing**: Wouter for client-side routing (lightweight React Router alternative)
-**State Management**: TanStack Query (React Query) for server state management
-**Build System**: Vite for frontend bundling, esbuild for backend bundling
+**Previous Architecture (Converted from React):**
+Originally built with React/TypeScript but converted to static HTML for prototype simplicity.
 
 ## Key Components
 
-### Frontend Architecture
-- **Component Library**: shadcn/ui components built on Radix UI primitives
-- **Styling Strategy**: Tailwind CSS with CSS custom properties for theming
-- **Font Strategy**: Google Fonts (Merriweather for headings, Open Sans for body text)
-- **State Management**: React Query for server state, local React state for UI state
-- **Routing**: File-based routing with Wouter (/, /film/:id, 404 handling)
+### Static File Structure
+- **Main Landing Page**: `index.html` with hero section, featured films, and contact info
+- **Film Detail Pages**: Individual pages for each featured film with cast, synopsis, and funding progress
+- **Shared Styles**: `styles.css` for global styling, `film-detail.css` for film page specific styling
+- **JavaScript**: `script.js` for mobile navigation, `film-detail.js` for gallery functionality
+- **Typography**: Google Fonts (Merriweather for headings, Open Sans for body text)
+- **Responsive Design**: Mobile-first approach with custom CSS media queries
 
-### Backend Architecture
-- **API Structure**: RESTful API with Express.js, routes prefixed with `/api`
-- **Database Layer**: Drizzle ORM with PostgreSQL dialect
-- **Storage Interface**: Abstracted storage layer with in-memory fallback (MemStorage)
-- **Development**: Hot module replacement with Vite integration
-- **Logging**: Custom request logging middleware for API endpoints
-
-### Database Schema
-- **Users Table**: Basic user structure with id, username, and password fields
-- **Migration System**: Drizzle Kit for schema migrations
-- **Type Safety**: Zod schemas for runtime validation, integrated with Drizzle
+### Featured Films
+1. **She's Dating the Gangster (2014)** - Romance/Drama starring Kathryn Bernardo and Daniel Padilla
+2. **Seven Sundays (2017)** - Family/Drama starring Aga Muhlach and ensemble cast
+3. **100 Tula Para Kay Stella (2017)** - Romance/Poetry starring JC Santos and Bela Padilla
 
 ### UI Design System
-- **Theme**: Custom "Kwento" brand colors (maroon primary, gold secondary, coral accent)
+- **Theme Colors**: Deep red (#8B0000), gold (#D4AF37), coral (#FF6B6B)
 - **Typography**: Hierarchical font system with custom CSS properties
-- **Components**: Comprehensive UI library including cards, dialogs, forms, navigation
-- **Responsive Design**: Mobile-first approach with Tailwind breakpoints
+- **Components**: Cards, progress bars, navigation, galleries, responsive grid layouts
+- **Visual Elements**: Gradient overlays, smooth transitions, hover effects
 
 ## Data Flow
 
-1. **Static Data**: Film information currently stored in static TypeScript files
-2. **Client-Server Communication**: JSON API with fetch-based queries through React Query
-3. **Authentication**: Session-based (infrastructure in place but not implemented)
-4. **Database Operations**: CRUD operations through storage interface abstraction
-5. **Form Handling**: React Hook Form with Zod validation (infrastructure ready)
+1. **Static Content**: All film information and content stored directly in HTML files
+2. **Navigation**: JavaScript-powered mobile menu and smooth scrolling
+3. **Interactivity**: Gallery image switching, progress bar animations
+4. **Responsive Behavior**: CSS media queries for mobile, tablet, and desktop layouts
+5. **External Assets**: Unsplash images for film posters and backgrounds
 
-## External Dependencies
+## File Organization
 
-### Core Framework Dependencies
-- React 18+ with TypeScript
-- Express.js for server
-- Drizzle ORM with Neon Database serverless driver
-- Tailwind CSS for styling
+### Root Directory Files
+- `index.html` - Main landing page
+- `styles.css` - Global CSS styles
+- `script.js` - Main JavaScript functionality
+- `film-shes-dating-the-gangster.html` - Film detail page
+- `film-seven-sundays.html` - Film detail page  
+- `film-100-tula-para-kay-stella.html` - Film detail page
+- `film-detail.css` - Film page specific styles
+- `film-detail.js` - Film page JavaScript functionality
 
-### UI and UX Libraries
-- Radix UI primitives for accessible components
-- Lucide React for icons
-- TanStack React Query for data fetching
-- React Hook Form for form management
+### Development Environment
+- Express.js server configured to serve static files from root directory
+- Live development server with hot reload capabilities
+- TypeScript infrastructure maintained for potential future React upgrade
 
-### Development Tools
-- Vite for development server and building
-- esbuild for server bundling
-- TypeScript for type safety
-- Drizzle Kit for database migrations
+## Recent Changes
 
-### External Services
-- Neon Database for PostgreSQL hosting
-- Google Fonts for typography
-- Unsplash for placeholder images (in development)
+**January 2025:**
+- ✓ Converted React application to static HTML/CSS for prototype simplicity
+- ✓ Created individual film detail pages for three authentic Filipino films
+- ✓ Implemented responsive design with Filipino cinema theme colors
+- ✓ Added interactive gallery functionality and mobile navigation
+- ✓ Configured server to serve static HTML files properly
 
 ## Deployment Strategy
 
 **Development Environment**:
-- Vite dev server for frontend with HMR
-- tsx for running TypeScript server with hot reload
-- Integrated development setup with proxy handling
+- Express.js server serving static files from root directory
+- Node.js environment with TypeScript support maintained
+- Live reload and development server capabilities
 
 **Production Build**:
-- Frontend: Vite builds to `dist/public` directory
-- Backend: esbuild bundles server to `dist/index.js`
-- Static file serving: Express serves built frontend assets
+- Static HTML files can be served from any web server
+- No build process required - files are deployment-ready
+- Images sourced externally (no local asset management needed)
 
-**Database Management**:
-- Environment-based DATABASE_URL configuration
-- Drizzle migrations for schema changes
-- `db:push` script for development database updates
+**Key Commands**:
+- `npm run dev`: Development server with static file serving
+- Static files accessible directly via file paths
+- No compilation or build step required
 
-**Key Build Commands**:
-- `npm run dev`: Development mode with hot reload
-- `npm run build`: Production build for both client and server
-- `npm run start`: Production server startup
-- `npm run db:push`: Push schema changes to database
-
-The application is designed for deployment on platforms that support Node.js applications with PostgreSQL databases, with particular optimization for Replit's environment through specialized plugins and configuration.
+The website is designed for easy deployment on any static hosting platform while maintaining the development infrastructure for potential future React/JavaScript upgrades.

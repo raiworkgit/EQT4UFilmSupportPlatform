@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwento - Filipino Cinema Crowdfunding Platform</title>
+    <meta name="description" content="Discover and support authentic Filipino films. Connect filmmakers with passionate supporters through crowdfunding.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">Kwento</a>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-links-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#films" class="nav-link">Films</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="menu-icon">☰</span>
+                    <span class="close-icon" style="display: none;">✕</span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-links-mobile" id="mobileMenu">
+                <a href="index.html" class="nav-link-mobile">Home</a>
+                <a href="#films" class="nav-link-mobile">Films</a>
+                <a href="#about" class="nav-link-mobile">About</a>
+                <a href="#contact" class="nav-link-mobile">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Authentic Filipino Stories Deserve to be Told</h1>
+            <p class="hero-description">
+                Support independent Filipino filmmakers and help bring compelling stories to life through crowdfunding. 
+                Discover, fund, and celebrate the rich tapestry of Philippine cinema.
+            </p>
+            <button class="hero-button" onclick="scrollToFilms()">
+                Explore Films
+                <span class="arrow-icon">↓</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Featured Films Section -->
+    <section id="films" class="films-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Film Projects</h2>
+                <p class="section-description">
+                    Support these exceptional Filipino films and help bring authentic stories to audiences worldwide. 
+                    Each project represents the passion and creativity of Filipino filmmakers.
+                </p>
+            </div>
+            
+            <div class="films-grid">
+                <!-- Film 1: She's Dating the Gangster -->
+                <div class="film-card film-card-1">
+                    <div class="film-poster">
+                        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                             alt="She's Dating the Gangster poster" class="poster-image">
+                        <div class="poster-overlay">
+                            <a href="film-shes-dating-the-gangster.html" class="view-details">
+                                <span class="eye-icon">👁</span>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="film-info">
+                        <h3 class="film-title">She's Dating the Gangster</h3>
+                        <p class="film-meta">2014 • Romance/Drama</p>
+                        <p class="film-description">
+                            A heartwarming tale of young love that transcends time, following Athena and Kenji's journey from teenage romance to adult responsibilities. Based on the bestselling novel that captured the hearts of millions.
+                        </p>
+                        
+                        <div class="funding-progress">
+                            <div class="progress-header">
+                                <span class="progress-label">Funding Progress</span>
+                                <span class="progress-percentage">78%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="film-stats">
+                            <div class="stat">
+                                <div class="stat-value">₱2,340,000</div>
+                                <div class="stat-label">🎯 Raised</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">₱3,000,000</div>
+                                <div class="stat-label">Goal</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">1,247</div>
+                                <div class="stat-label">👥 Backers</div>
+                            </div>
+                        </div>
+                        
+                        <a href="film-shes-dating-the-gangster.html" class="support-button">
+                            Support This Film
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Film 2: Seven Sundays -->
+                <div class="film-card film-card-2">
+                    <div class="film-poster">
+                        <img src="https://images.unsplash.com/photo-1577003833619-76bbd7f82948?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                             alt="Seven Sundays poster" class="poster-image">
+                        <div class="poster-overlay">
+                            <a href="film-seven-sundays.html" class="view-details">
+                                <span class="eye-icon">👁</span>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="film-info">
+                        <h3 class="film-title">Seven Sundays</h3>
+                        <p class="film-meta">2017 • Family/Drama</p>
+                        <p class="film-description">
+                            A powerful story about a Filipino family reuniting to care for their ailing father, discovering that healing relationships takes more than just good intentions. A touching exploration of family bonds.
+                        </p>
+                        
+                        <div class="funding-progress">
+                            <div class="progress-header">
+                                <span class="progress-label">Funding Progress</span>
+                                <span class="progress-percentage">92%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="film-stats">
+                            <div class="stat">
+                                <div class="stat-value">₱4,140,000</div>
+                                <div class="stat-label">🎯 Raised</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">₱4,500,000</div>
+                                <div class="stat-label">Goal</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">2,089</div>
+                                <div class="stat-label">👥 Backers</div>
+                            </div>
+                        </div>
+                        
+                        <a href="film-seven-sundays.html" class="support-button">
+                            Support This Film
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Film 3: 100 Tula Para Kay Stella -->
+                <div class="film-card film-card-3">
+                    <div class="film-poster">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                             alt="100 Tula Para Kay Stella poster" class="poster-image">
+                        <div class="poster-overlay">
+                            <a href="film-100-tula-para-kay-stella.html" class="view-details">
+                                <span class="eye-icon">👁</span>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="film-info">
+                        <h3 class="film-title">100 Tula Para Kay Stella</h3>
+                        <p class="film-meta">2017 • Romance/Poetry</p>
+                        <p class="film-description">
+                            An intimate portrait of unrequited love told through poetry, following Fidel as he pours his heart into 100 poems for Stella. A beautiful meditation on love, art, and the courage to express oneself.
+                        </p>
+                        
+                        <div class="funding-progress">
+                            <div class="progress-header">
+                                <span class="progress-label">Funding Progress</span>
+                                <span class="progress-percentage">65%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="film-stats">
+                            <div class="stat">
+                                <div class="stat-value">₱1,625,000</div>
+                                <div class="stat-label">🎯 Raised</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">₱2,500,000</div>
+                                <div class="stat-label">Goal</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">892</div>
+                                <div class="stat-label">👥 Backers</div>
+                            </div>
+                        </div>
+                        
+                        <a href="film-100-tula-para-kay-stella.html" class="support-button">
+                            Support This Film
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="about-title">Empowering Filipino Storytellers</h2>
+                    <p class="about-paragraph">
+                        Kwento bridges the gap between passionate Filipino filmmakers and supporters who believe in authentic storytelling. 
+                        Our platform provides the tools and community needed to bring compelling Filipino narratives to life.
+                    </p>
+                    <p class="about-paragraph">
+                        Every film tells a story that matters. Every story deserves an audience. Through crowdfunding, 
+                        we democratize film production and ensure that diverse Filipino voices are heard on the global stage.
+                    </p>
+                    <p class="about-paragraph">
+                        Join our community of film enthusiasts, creative supporters, and storytelling champions as we celebrate 
+                        the rich tradition of Philippine cinema.
+                    </p>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                         alt="Filipino filmmaker at work" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">About Kwento</h3>
+                    <p class="footer-text">Dedicated to supporting Filipino cinema through crowdfunding and community engagement.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">For Filmmakers</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Submit Your Project</a>
+                        <a href="#" class="footer-link">Filmmaker Resources</a>
+                        <a href="#" class="footer-link">Success Stories</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">For Supporters</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Browse All Films</a>
+                        <a href="#" class="footer-link">How It Works</a>
+                        <a href="#" class="footer-link">Community Guidelines</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <span class="contact-icon">✉</span>
+                            <span class="contact-text">support@kwento.ph</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span class="contact-text">+63 2 8123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span class="contact-text">Manila, Philippines</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Kwento. All rights reserved. Supporting Filipino cinema, one story at a time.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
