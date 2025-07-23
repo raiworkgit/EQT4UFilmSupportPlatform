@@ -1,56 +1,60 @@
 <!DOCTYPE html>
-<html lang="fil">
+<html lang="tl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>She's Dating the Gangster - Kwento</title>
-    <meta name="description" content="Isang nakaaantig na kuwento ng batang pag-ibig na lumalampas sa panahon. Suportahan ang tunay na Filipino romance drama na ito na batay sa bestselling na nobela.">
+    <meta name="description" content="Ang isang nakakaantig na kwento ng pag-ibig at sakripisyo na magbabago sa inyong pananaw sa tunay na pag-ibig.">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="film-detail.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-content">
-                <a href="index.html" class="nav-logo">Kwento</a>
-                
-                <div class="nav-links-desktop">
-                    <a href="index.html" class="nav-link">Tahanan</a>
-                    <a href="index.html#films" class="nav-link">Mga Pelikula</a>
-                    <a href="index.html#about" class="nav-link">Tungkol</a>
-                    <a href="index.html#contact" class="nav-link">Makipag-ugnayan</a>
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <h1 class="brand-title">Kwento</h1>
+                </a>
+            </div>
+            
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#featured" class="nav-link">Mga Pelikula</a>
+                    <a href="#about" class="nav-link">Tungkol</a>
+                    <a href="#contact" class="nav-link">Makipag-ugnayan</a>
                 </div>
-
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <span class="menu-icon">☰</span>
-                    <span class="close-icon" style="display: none;">✕</span>
-                </button>
             </div>
-
-            <div class="nav-links-mobile" id="mobileMenu">
-                <a href="index.html" class="nav-link-mobile">Tahanan</a>
-                <a href="index.html#films" class="nav-link-mobile">Mga Pelikula</a>
-                <a href="index.html#about" class="nav-link-mobile">Tungkol</a>
-                <a href="index.html#contact" class="nav-link-mobile">Makipag-ugnayan</a>
-            </div>
+            
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </div>
     </nav>
 
     <!-- Film Hero Section -->
     <section class="film-hero">
-        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080" 
-             alt="She's Dating the Gangster" class="hero-image" id="heroImage">
-        <div class="hero-overlay"></div>
+        <div class="film-hero-image">
+            <img id="heroImage" src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080" 
+                 alt="She's Dating the Gangster hero image" class="hero-bg">
+            <div class="film-hero-overlay"></div>
+        </div>
         
-        <div class="hero-content">
+        <div class="film-hero-content">
             <div class="container">
                 <a href="index.html" class="back-link">
                     <span class="back-arrow">←</span>
-                    Balik sa Tahanan
+                    Back to Home
                 </a>
                 
                 <h1 class="film-hero-title">She's Dating the Gangster</h1>
@@ -74,33 +78,58 @@
                 <div class="main-content">
                     <!-- Synopsis -->
                     <section class="content-section">
-                        <h2 class="section-heading">Buod</h2>
+                        <h2 class="section-heading">Synopsis</h2>
                         <p class="synopsis-text">
-                            Based on the popular Wattpad novel by Bianca Bernardino, this film explores themes of young love, sacrifice, and the bittersweet nature of relationships that define our youth.
+                            Isang nakakaantig na paglalarawan ng batang pag-ibig, sakripisyo, at ang mapait-matamis na kalikasan ng mga relasyong nagbibigay-hugis sa aming kabataan.
                         </p>
                         <p class="synopsis-text">
-                            She's Dating the Gangster tells the story of 17-year-old Athena Dizon who unwittingly plays a trick on resident heartthrob and bad boy, gangster, Kenji de los Reyes. All of a sudden, she finds herself pretending to be his girlfriend to make an ex jealous; and he, pretending to be her boyfriend to make her ex-boyfriend jealous. The simple game turns into something more when Athena and Kenji find themselves falling in love with each other. But their love story is far from perfect, as they deal with the harsh realities of life and the consequences of their choices.
+                            Ang "She's Dating the Gangster" ay kwento ng 17-taong-gulang na si Athena Dizon na hindi sinasadyang nagloko sa resident heartthrob at bad boy na si Kenji de los Reyes. Bigla siyang nagiging kunwa niyang girlfriend para magselos ang ex nito; at siya naman, nagkunwaring boyfriend niya para magselos ang dating boyfriend niya. Ang simpleng laro ay naging higit pa nang mahulog sina Athena at Kenji sa isa't isa. Ngunit ang kanilang love story ay malayo sa perpekto, habang kinakaharap nila ang mga malupit na katotohanan ng buhay at mga kahihinatnan ng kanilang mga pagpili.
                         </p>
+                        
+                        <!-- Director Commentary -->
+                        <div class="director-commentary">
+                            <h4 class="commentary-title">
+                                <span class="commentary-icon">🎭</span>
+                                Komento ng Direktor
+                            </h4>
+                            <p class="commentary-text">
+                                "Ang pelikulang ito ay hindi lamang tungkol sa pag-ibig ng mga kabataan, kundi tungkol din sa mga sakripisyong ginagawa natin para sa mga taong mahal natin. Nais naming ipakita na ang tunay na pag-ibig ay hindi palaging may happy ending." - Cathy Garcia-Molina
+                            </p>
+                        </div>
+                        
+                        <!-- Symbols of Trust -->
+                        <div class="trust-symbols">
+                            <h4 class="trust-title">
+                                <span class="trust-icon">🏆</span>
+                                Mga Simbolo ng Tiwala
+                            </h4>
+                            <div class="trust-badges">
+                                <span class="trust-badge">✓ Box Office Hit</span>
+                                <span class="trust-badge">✓ Secure na Pagbabayad</span>
+                                <span class="trust-badge">✓ Transparent na Pondo</span>
+                                <span class="trust-badge">✓ Regular na Update</span>
+                            </div>
+                        </div>
                     </section>
 
                     <!-- Cast & Crew -->
                     <section class="content-section">
-                        <h2 class="section-heading">Cast at Crew</h2>
+                        <h2 class="section-heading">Cast & Crew</h2>
                         <div class="cast-crew-grid">
                             <div class="crew-item">
                                 <h3 class="crew-role">
                                     <span class="crew-icon">🎬</span>
-                                    Direktor
+                                    Director
                                 </h3>
-                                <p class="crew-name">Cathy Garcia-Sampana</p>
+                                <p class="crew-name">Cathy Garcia-Molina</p>
                             </div>
                             
                             <div class="crew-item">
                                 <h3 class="crew-role">
                                     <span class="crew-icon">✍️</span>
-                                    Manunulat
+                                    Writer
                                 </h3>
-                                <p class="crew-name">Carmi Raymundo</p>
+                                <p class="crew-name">Bianca Bernardino</p>
                             </div>
                             
                             <div class="cast-section">
@@ -142,69 +171,68 @@
                 <div class="sidebar">
                     <!-- Funding Progress -->
                     <div class="sidebar-card">
-                        <h3 class="card-title">Pag-unlad ng Pondo</h3>
+                        <h3 class="sidebar-title">Progress ng Pondo</h3>
                         
-                        <div class="funding-progress">
-                            <div class="progress-header">
-                                <span class="progress-label">Pag-unlad</span>
-                                <span class="progress-percentage">78%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 78%"></div>
-                            </div>
+                        <div class="funding-amount">
+                            <span class="amount-raised">₱2,847,500</span>
+                            <span class="amount-goal">goal: ₱4,500,000</span>
                         </div>
-
+                        
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 63%"></div>
+                        </div>
+                        
                         <div class="funding-stats">
-                            <div class="funding-stat">
-                                <div class="stat-row">
-                                    <span class="stat-icon">🎯</span>
-                                    <span class="stat-label">Raised</span>
-                                </div>
-                                <span class="stat-value">₱2,340,000</span>
+                            <div class="stat-item">
+                                <span class="stat-label">Mga Backer</span>
+                                <span class="stat-value">1,245</span>
                             </div>
-                            
-                            <div class="funding-stat">
-                                <span class="stat-label">Goal</span>
-                                <span class="stat-value">₱3,000,000</span>
-                            </div>
-                            
-                            <div class="funding-stat">
-                                <div class="stat-row">
-                                    <span class="stat-icon">👥</span>
-                                    <span class="stat-label">Backers</span>
-                                </div>
-                                <span class="stat-value">1,247</span>
+                            <div class="stat-item">
+                                <span class="stat-label">Mga Araw na Natitira</span>
+                                <span class="stat-value">18</span>
                             </div>
                         </div>
 
-                        <button class="support-btn">Support This Film</button>
+                        <button class="support-btn" onclick="openDonationPopup()">Suportahan ang Pelikulang Ito</button>
                     </div>
 
                     <!-- Film Details -->
                     <div class="sidebar-card">
-                        <h3 class="card-title">Film Details</h3>
+                        <h3 class="sidebar-title">Mga Detalye ng Pelikula</h3>
                         
                         <div class="detail-item">
-                            <span class="detail-label">Release Year:</span>
+                            <span class="detail-label">Genre</span>
+                            <p class="detail-value">Romance, Drama, Youth</p>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <span class="detail-label">Taon ng Paglabas</span>
                             <p class="detail-value">2014</p>
                         </div>
                         
                         <div class="detail-item">
-                            <span class="detail-label">Genre:</span>
-                            <p class="detail-value">Romance/Drama</p>
+                            <span class="detail-label">Tagal</span>
+                            <p class="detail-value">110 minuto</p>
                         </div>
                         
                         <div class="detail-item">
-                            <span class="detail-label">Director:</span>
-                            <p class="detail-value">Cathy Garcia-Sampana</p>
+                            <span class="detail-label">Wika</span>
+                            <p class="detail-value">Filipino, English</p>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <span class="detail-label">Produksyon</span>
+                            <p class="detail-value">Star Cinema</p>
                         </div>
                     </div>
 
                     <!-- Share -->
                     <div class="sidebar-card">
-                        <h3 class="card-title">Share This Film</h3>
-                        <p class="share-text">Help spread the word about this amazing Filipino film project.</p>
-                        <button class="share-btn">Share Project</button>
+                        <h3 class="sidebar-title">Ibahagi ang Proyekto</h3>
+                        <p class="share-text">
+                            Tulungang maging viral ang projektong ito sa pamamagitan ng pagbabahagi sa inyong mga kaibigan at pamilya.
+                        </p>
+                        <button class="share-btn">Ibahagi sa Social Media</button>
                     </div>
                 </div>
             </div>
@@ -212,56 +240,111 @@
     </div>
 
     <!-- Footer -->
-    <footer id="contact" class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3 class="footer-title">About Kwento</h3>
-                    <p class="footer-text">Dedicated to supporting Filipino cinema through crowdfunding and community engagement.</p>
+                    <h3 class="footer-title">Kwento</h3>
+                    <p class="footer-text">
+                        Sumusuporta sa mga filmmaker ng Pilipinas sa pamamagitan ng crowdfunding at community building.
+                    </p>
                 </div>
                 
                 <div class="footer-section">
-                    <h3 class="footer-title">For Filmmakers</h3>
-                    <div class="footer-links">
-                        <a href="#" class="footer-link">Submit Your Project</a>
-                        <a href="#" class="footer-link">Filmmaker Resources</a>
-                        <a href="#" class="footer-link">Success Stories</a>
-                    </div>
+                    <h4 class="footer-subtitle">Mga Link</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about" class="footer-link">Tungkol sa Amin</a></li>
+                        <li><a href="#featured" class="footer-link">Mga Pelikula</a></li>
+                        <li><a href="#contact" class="footer-link">Makipag-ugnayan</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                    </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h3 class="footer-title">For Supporters</h3>
-                    <div class="footer-links">
-                        <a href="#" class="footer-link">Browse All Films</a>
-                        <a href="#" class="footer-link">How It Works</a>
-                        <a href="#" class="footer-link">Community Guidelines</a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h3 class="footer-title">Contact</h3>
-                    <div class="footer-contact">
-                        <div class="contact-item">
-                            <span class="contact-icon">✉</span>
-                            <span class="contact-text">support@kwento.ph</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">📞</span>
-                            <span class="contact-text">+63 2 8123 4567</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">📍</span>
-                            <span class="contact-text">Manila, Philippines</span>
-                        </div>
-                    </div>
+                    <h4 class="footer-subtitle">Makipag-ugnayan</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:support@kwento.ph" class="footer-link">support@kwento.ph</a></li>
+                        <li><a href="tel:+639123456789" class="footer-link">+63 912 345 6789</a></li>
+                    </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p class="copyright">© 2024 Kwento. All rights reserved. Supporting Filipino cinema, one story at a time.</p>
+                <p class="footer-copyright">
+                    © 2024 Kwento. Lahat ng karapatan ay nakalaan. Ginawa para sa mga Filipino filmmaker.
+                </p>
             </div>
         </div>
     </footer>
+
+    <!-- Donation Popup -->
+    <div id="donationPopup" class="donation-popup">
+        <div class="popup-overlay" onclick="closeDonationPopup()"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3 class="popup-title">Suportahan ang "She's Dating the Gangster"</h3>
+                <button class="popup-close" onclick="closeDonationPopup()">✕</button>
+            </div>
+            
+            <div class="popup-body">
+                <p class="popup-description">
+                    Ang inyong suporta ay makakatulong sa pagpapatuloy ng proyektong ito at sa pagdadala ng mga magagandang kuwentong Pilipino sa mas maraming tao.
+                </p>
+                
+                <div class="amount-selection">
+                    <h4 class="amount-title">Pumili ng Halaga</h4>
+                    <div class="amount-buttons">
+                        <button class="amount-btn" onclick="selectAmount(500)">₱500</button>
+                        <button class="amount-btn" onclick="selectAmount(1000)">₱1,000</button>
+                        <button class="amount-btn" onclick="selectAmount(2500)">₱2,500</button>
+                        <button class="amount-btn" onclick="selectAmount(5000)">₱5,000</button>
+                    </div>
+                    <div class="custom-amount">
+                        <label for="customAmount">O maglagay ng sariling halaga:</label>
+                        <input type="number" id="customAmount" placeholder="₱0" min="100" step="50">
+                    </div>
+                </div>
+                
+                <div class="donor-info">
+                    <h4 class="info-title">Impormasyon ng Donator</h4>
+                    <div class="form-group">
+                        <label for="donorName">Pangalan (optional)</label>
+                        <input type="text" id="donorName" placeholder="Maglagay ng pangalan">
+                    </div>
+                    <div class="form-group">
+                        <label for="donorEmail">Email</label>
+                        <input type="email" id="donorEmail" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donorMessage">Mensahe sa Team (optional)</label>
+                        <textarea id="donorMessage" placeholder="Maglagay ng mensahe ng suporta..."></textarea>
+                    </div>
+                </div>
+                
+                <div class="payment-methods">
+                    <h4 class="payment-title">Paraan ng Pagbabayad</h4>
+                    <div class="payment-options">
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="gcash" checked>
+                            <span class="payment-label">💳 GCash</span>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="paymaya">
+                            <span class="payment-label">💙 PayMaya</span>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="bank">
+                            <span class="payment-label">🏦 Bank Transfer</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <button class="donate-btn" onclick="processDonation()">
+                    Magbigay ng Suporta Ngayon
+                </button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
     <script src="film-detail.js"></script>

@@ -76,11 +76,36 @@
                     <section class="content-section">
                         <h2 class="section-heading">Synopsis</h2>
                         <p class="synopsis-text">
-                            A tender and authentic portrayal of Filipino millennial romance, exploring themes of unrequited love, artistic expression, and the journey to self-discovery.
+                            Isang malambot at tunay na paglalarawan ng pag-iibigan ng mga millennial na Pilipino, na tumutuklas sa mga tema ng hindi nagkakamahal na pag-ibig, artistic expression, at ang paglalakbay tungo sa pagkakakilala sa sarili.
                         </p>
                         <p class="synopsis-text">
-                            100 Tula Para Kay Stella is a coming-of-age romantic drama that follows Fidel, a shy college student who expresses his feelings for his college crush Stella through poetry. The film beautifully captures the awkwardness of young love and the power of words to convey emotions that are too difficult to speak aloud.
+                            Ang "100 Tula Para Kay Stella" ay isang coming-of-age romantic drama na sumusunod kay Fidel, isang mahiyahing college student na ipinahahayag ang kanyang mga damdamin para sa kanyang college crush na si Stella sa pamamagitan ng tula. Magagandang nakakuha ng pelikula ang kahihiyan ng batang pag-ibig at ang kapangyarihan ng mga salita upang magpadala ng mga emosyon na napakahirap sabihin nang malakas.
                         </p>
+                        
+                        <!-- Director Commentary -->
+                        <div class="director-commentary">
+                            <h4 class="commentary-title">
+                                <span class="commentary-icon">🎭</span>
+                                Komento ng Direktor
+                            </h4>
+                            <p class="commentary-text">
+                                "Ang pelikulang ito ay hindi lamang tungkol sa pag-ibig, kundi tungkol rin sa paghahanap ng sariling tinig. Si Fidel ay kumakatawan sa lahat ng natatakot na magpahayag ng kanilang tunay na damdamin." - Jason Paul Laxamana
+                            </p>
+                        </div>
+                        
+                        <!-- Symbols of Trust -->
+                        <div class="trust-symbols">
+                            <h4 class="trust-title">
+                                <span class="trust-icon">🏆</span>
+                                Mga Simbolo ng Tiwala
+                            </h4>
+                            <div class="trust-badges">
+                                <span class="trust-badge">✓ Sertipikadong Filmmaker</span>
+                                <span class="trust-badge">✓ Secure na Pagbabayad</span>
+                                <span class="trust-badge">✓ Transparent na Pondo</span>
+                                <span class="trust-badge">✓ Regular na Update</span>
+                            </div>
+                        </div>
                     </section>
 
                     <!-- Cast & Crew -->
@@ -177,7 +202,7 @@
                             </div>
                         </div>
 
-                        <button class="support-btn">Support This Film</button>
+                        <button class="support-btn" onclick="openDonationPopup()">Suportahan ang Pelikulang Ito</button>
                     </div>
 
                     <!-- Film Details -->
@@ -262,6 +287,75 @@
             </div>
         </div>
     </footer>
+
+    <!-- Donation Popup -->
+    <div id="donationPopup" class="donation-popup">
+        <div class="popup-overlay" onclick="closeDonationPopup()"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3 class="popup-title">Suportahan ang "100 Tula Para Kay Stella"</h3>
+                <button class="popup-close" onclick="closeDonationPopup()">✕</button>
+            </div>
+            
+            <div class="popup-body">
+                <p class="popup-description">
+                    Ang inyong suporta ay makakatulong sa pagpapatuloy ng proyektong ito at sa pagdadala ng mga magagandang kuwentong Pilipino sa mas maraming tao.
+                </p>
+                
+                <div class="amount-selection">
+                    <h4 class="amount-title">Pumili ng Halaga</h4>
+                    <div class="amount-buttons">
+                        <button class="amount-btn" onclick="selectAmount(500)">₱500</button>
+                        <button class="amount-btn" onclick="selectAmount(1000)">₱1,000</button>
+                        <button class="amount-btn" onclick="selectAmount(2500)">₱2,500</button>
+                        <button class="amount-btn" onclick="selectAmount(5000)">₱5,000</button>
+                    </div>
+                    <div class="custom-amount">
+                        <label for="customAmount">O maglagay ng sariling halaga:</label>
+                        <input type="number" id="customAmount" placeholder="₱0" min="100" step="50">
+                    </div>
+                </div>
+                
+                <div class="donor-info">
+                    <h4 class="info-title">Impormasyon ng Donator</h4>
+                    <div class="form-group">
+                        <label for="donorName">Pangalan (optional)</label>
+                        <input type="text" id="donorName" placeholder="Maglagay ng pangalan">
+                    </div>
+                    <div class="form-group">
+                        <label for="donorEmail">Email</label>
+                        <input type="email" id="donorEmail" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donorMessage">Mensahe sa Team (optional)</label>
+                        <textarea id="donorMessage" placeholder="Maglagay ng mensahe ng suporta..."></textarea>
+                    </div>
+                </div>
+                
+                <div class="payment-methods">
+                    <h4 class="payment-title">Paraan ng Pagbabayad</h4>
+                    <div class="payment-options">
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="gcash" checked>
+                            <span class="payment-label">💳 GCash</span>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="paymaya">
+                            <span class="payment-label">💙 PayMaya</span>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="bank">
+                            <span class="payment-label">🏦 Bank Transfer</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <button class="donate-btn" onclick="processDonation()">
+                    Magbigay ng Suporta Ngayon
+                </button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
     <script src="film-detail.js"></script>

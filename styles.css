@@ -172,8 +172,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, hsla(0, 100%, 27%, 0.8), hsla(0, 100%, 21%, 0.9)), 
-              url('https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080');
+  background: linear-gradient(135deg, hsla(0, 100%, 12%, 0.8), hsla(0, 100%, 10%, 0.9)), 
+              url('felix-mooneeram-evlkOfkQ5rE-unsplash.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -182,6 +182,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding: 4rem 1rem;
 }
+
 
 .hero-content {
   max-width: 4rem;
